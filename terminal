@@ -1,0 +1,19 @@
+# Create main folders
+mkdir backend
+cd backend
+mkdir config controllers middleware models routes
+
+# Initialize npm and install dependencies
+npm init -y
+npm install express mongoose bcryptjs jsonwebtoken dotenv cors
+npm install nodemon --save-dev
+
+# Create all the files
+touch .env .gitignore server.js
+touch config/db.js
+touch controllers/authController.js
+touch middleware/authMiddleware.js
+touch models/userModel.js
+touch routes/authRoutes.js
+
+npm run dev 
